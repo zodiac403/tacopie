@@ -17,3 +17,11 @@ version: 1.0.{build}
 
 # Build worker image (VM template)
 image: Visual Studio 2017
+
+platform:
+  - x86
+  - Any CPU
+
+configuration:
+  - Debug
+  - Release
