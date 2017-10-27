@@ -47,7 +47,7 @@
 #define __TACOPIE_LENGTH(size) static_cast<int>(size)       // for Windows, convert buffer size to `int`
 #pragma warning ( disable: 4996 )                           // `inet_ntoa` is deprecated as it does not support IPv6
 #else
-#define LENGTH(size) size                                   // for Unix, keep buffer size as `size_t`
+#define __TACOPIE_LENGTH(size) size                                   // for Unix, keep buffer size as `size_t`
 #endif /* _WIN32 */
 
 namespace tacopie {
